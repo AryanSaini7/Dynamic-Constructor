@@ -1,0 +1,76 @@
+//Program 1:Printing a Word.
+#include <iostream>
+using namespace std;
+class word
+{
+    const char *p;
+    public:
+    word()
+    {
+        p=new char[6];
+        p="rana";
+    }
+    void print()
+    {
+        cout<<"Word is: "<<p;
+    }
+    
+};
+int main()
+{
+    word f;
+    f.print();
+}
+
+//Program 2:
+#include<iostream>
+using namespace std;
+class dop
+{
+    int *a;
+    public:
+    dop()
+    {
+        a=new int[3]{1,2,3};
+        for(int i=0;i<3;i++)
+        {
+            cout<<a[i]<<" ";
+        }
+    }
+
+};
+int main()
+{
+  
+    dop*b=new dop[5];
+}
+
+//program 3:
+#include<iostream>
+using namespace std;
+class golf
+{
+    int *d;
+    public:
+    golf()
+    {
+       d= new int,
+       *d=9;
+    }
+    golf(int x)
+    {
+        d=new int,
+        *d=x;
+    }
+    void print()
+    {
+        cout<<"Value is: "<<*d<<endl;
+    }
+};
+int main()
+{
+    golf g;
+    g.print();
+    golf m(0);
+    m.print();
+}
